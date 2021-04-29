@@ -102,7 +102,7 @@ function App() {
     setCart([...cart, book]);
   };
   let removeCart = (item) => {
-    setCart(cart.filter((obj) => obj.id != item.id));
+    setCart(cart.filter((obj) => obj.id !== item.id));
   };
   return (
     <div className="container-fluid bg-info">
